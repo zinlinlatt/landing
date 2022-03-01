@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Nunito:wght@200&family=Poppins:ital,wght@0,100;0,500;0,700;0,800;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+*{
+    box-sizing: border-box;
+}
+
+iframe{
+    max-width: 90%;
+    margin-bottom: 30px;
+}
+img{
+    max-width: 100%;
+}
+
+section h2{
+text-align: center;
+margin-top: 40px;
+}
+.btn{
+    background-color: #187bcd;
+    color: white;
+    box-shadow: 2px 2px 2px #1167b1;
+    padding:10px 25px ;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.1s ease;
+}
+.btn-ghost{
+    box-shadow: none;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.btn:active{
+    box-shadow: 0 0 0 #1167b1;
+    transform: translate(2px 2px);
+}
+.btn-ghost:active{
+    transform: none;
+}
+.container{
+    max-width: 700px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body{
+    font-family: 'Roboto';
+    margin: 50px 0 0;
+    line-height: 1.5;
+}
+.bg-black{
+    background-color: #187bcd;
+}
+nav{
+    background-color: #187bcd;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
+}
+.nav-link{
+color: white;
+text-decoration: none;
+margin: 0 15px;
+}
+.header-left{
+    width: 60%;
+    padding-right: 20px;
+}
+.header-right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.feature{
+    background-color: #1167b1;
+    width: 30%;
+    text-align: center;
+    /*box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);*/
+    margin:0 1.66%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.feature i{
+    font-size: 30px;
+   /* color: #ffdb15;*/
+   margin-top: 15px;
+}
+.feature h2{
+font-size: 18px;
+margin-top: 5px;
+color: white;
+}
+.feature p{
+    font-size: 12px;
+   line-height: 25px;
+   color: white;
+}
+form{
+margin-bottom: 40px;
+}
+form .flex{
+ display: flex;
+ flex-wrap: wrap;
+}
+form h2{
+    color: white;
+}
+form input {
+
+    color: black;
+    padding:10px 25px ;
+    border-radius: 5px;
+    border: 0;
+    display: inline-block;
+    flex: 1;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+
+
+@media (max-width: 480px) {
+    .header-left, .header-right{
+        width: 100%;
+    }
+    .header-right{
+        order: 0;
+    }
+    .header-left{
+        order: 1;
+        text-align: center;
+        padding-left: 20px;
+    }
+    .header-left h1{
+        display: none;
+    }
+    .feature{
+        width: 100%;
+        margin: 10px;
+    }
+    .flex input {
+        width: 100%;
+        margin: 5px 10px;
+    }
+}
